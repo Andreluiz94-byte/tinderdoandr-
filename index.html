@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tinder do André</title>
+    <style>
+      /* Add some styling to the page */
+      body {
+        text-align: center;
+        font-family: sans-serif;
+        background-color: rgba(0, 140, 255, 0.2);
+      }
+
+      img {
+        width: 200px;
+        border-radius: 50%;
+      }
+
+      h1, h2 {
+        margin: 0;
+        padding: 0;
+      }
+
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #eee;
+        cursor: pointer;
+      }
+   
+      button:hover {
+        background-color: #ddd;
+      }
+
+      button.like {
+        color: green;
+      }
+
+      button.dislike {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>André Tinder</h1><br>
+
+    <img src="/305929825_5608510059169874_594668903330369573_n.jpg" alt="Profile image" /> <br>
+
+    <h2>Deixe seu like nesse incrível homem</h2> <br>
+    <button class="like">Like</button>
+    <button class="dislike">Dislike</button>
+    <button class="button3">Vá para a próxima página</button>
+   
+    <script>
+      // Add some functionality to the buttons
+      const likeButton = document.querySelector('.like');
+      const dislikeButton = document.querySelector('.dislike');
+      const button3 = document.querySelector('.button3');
+
+      likeButton.addEventListener('click', function() {
+        alert('Excelente gosto, mas infelizmente, você vai ficar chorando pq ele já tem namorada (Jéssica te amo)');
+      });
+
+      dislikeButton.addEventListener('click', function() {
+        alert('Sério que você deu dislike? Que mal gosto! Vai procurar um zé droguinha!');
+      });
+     
+      button3.addEventListener('click', function() {
+        alert('Impossível encontrar outro igual, então não tem como ir para uma próxima página');
+      });
+
+    </script>
+  </body>
+</html>
+
+
